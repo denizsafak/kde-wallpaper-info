@@ -10,6 +10,7 @@
         "Description": "A simple plasmoid to show current wallpaper information",
         "Id": "kde-wallpaper-info",
         "Name": "Wallpaper Info",
+        "Icon": "preferences-wallpaper",
         "Version": "1.0",
         "License": "GPL 2.0",
         "Website": "https://github.com/denizsafak/kde-wallpaper-info",
