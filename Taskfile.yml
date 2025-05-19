@@ -22,7 +22,7 @@ tasks:
   remove:
     desc: Remove the installed plasmoid
     cmds:
-      - kpackagetool6 -t Plasma/Applet -r kde-wallpaperinfo
+      - kpackagetool6 -t Plasma/Applet -r kde-wallpaper-info
       - kquitapp5 plasmashell
       - kstart5 plasmashell
 
@@ -30,5 +30,5 @@ tasks:
     desc: Create a .plasmoid file
     cmds:
       - mkdir -p build
-      - rm -f build/kde-wallpaperinfo-v{{.version}}.plasmoid
-      - zip -r build/kde-wallpaperinfo-v{{.version}}.plasmoid metadata.json contents/ COPYING README.md Taskfile.yml
+      - rm -f build/kde-wallpaper-info-v{{.version}}.plasmoid
+      - zip -r build/kde-wallpaper-info-v{{.version}}.plasmoid metadata.json contents/ COPYING README.md Taskfile.yml
