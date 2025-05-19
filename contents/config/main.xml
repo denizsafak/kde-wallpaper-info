@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+    http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+    <kcfgfile name=""/>
+
+    <group name="General">
+        <entry name="updateInterval" type="Int">
+            <default>5</default>
+        </entry>
+        <entry name="showTitle" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showPath" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showFileSize" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showDimensions" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showCreationDate" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="enableClickableLabels" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showTooltips" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="displayFilenameAsTitle" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="hideLabels" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="textAlignment" type="Int">
+            <default>0</default><!-- 0: Left, 1: Center, 2: Right -->
+        </entry>
+        <entry name="paddingTop" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="paddingRight" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="paddingBottom" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="paddingLeft" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="paddingLocked" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="titleClickAction" type="Int">
+            <default>1</default><!-- 0: Do nothing, 1: Open image, 2: Open folder, 3: Next wallpaper -->
+        </entry>
+        <entry name="pathClickAction" type="Int">
+            <default>2</default><!-- 0: Do nothing, 1: Open image, 2: Open folder, 3: Next wallpaper -->
+        </entry>
+        <entry name="sizeClickAction" type="Int">
+            <default>0</default><!-- 0: Do nothing, 1: Open image, 2: Open folder, 3: Next wallpaper -->
+        </entry>
+        <entry name="dimensionsClickAction" type="Int">
+            <default>0</default><!-- 0: Do nothing, 1: Open image, 2: Open folder, 3: Next wallpaper -->
+        </entry>
+        <entry name="dateClickAction" type="Int">
+            <default>0</default><!-- 0: Do nothing, 1: Open image, 2: Open folder, 3: Next wallpaper -->
+        </entry>
+    </group>
+
+</kcfg>

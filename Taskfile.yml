@@ -1,0 +1,34 @@
+version: '3'
+
+vars:
+  # Keep in sync with metadata.json
+  version: '1.0'
+
+tasks:
+  install:
+    desc: Install the plasmoid for the current user
+    cmds:
+      - kpackagetool6 -t Plasma/Applet -i .
+      - kquitapp5 plasmashell
+      - kstart5 plasmashell
+
+  update:
+    desc: Update an already installed plasmoid
+    cmds:
+      - kpackagetool6 -t Plasma/Applet -u .
+      - kquitapp5 plasmashell
+      - kstart5 plasmashell
+
+  remove:
+    desc: Remove the installed plasmoid
+    cmds:
+      - kpackagetool6 -t Plasma/Applet -r kde-wallpaperinfo
+      - kquitapp5 plasmashell
+      - kstart5 plasmashell
+
+  package:
+    desc: Create a .plasmoid file
+    cmds:
+      - mkdir -p build
+      - rm -f build/kde-wallpaperinfo-v{{.version}}.plasmoid
+      - zip -r build/kde-wallpaperinfo-v{{.version}}.plasmoid metadata.json contents/ COPYING README.md Taskfile.yml

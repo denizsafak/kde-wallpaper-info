@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "denizsafak98@gmail.com",
+                "Name": "Deniz Şafak"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "A simple plasmoid to show current wallpaper information",
+        "Id": "kde-wallpaperinfo",
+        "Name": "Wallpaper Info",
+        "Version": "1.0",
+        "License": "GPL 2.0",
+        "Website": "https://github.com/denizsafak/kde-wallpaperinfo",
+        "BugReportUrl": "https://github.com/denizsafak/kde-wallpaperinfo/issues"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml"
+}
